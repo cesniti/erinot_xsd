@@ -35,8 +35,15 @@
 <!-- V2.4G     PFO The length of NSTR code has been changed  from fixed length 6 to minlength 2 and maxlength 6 CR ERI 15 -->
 <!-- V2.4H     PFO Container Type has been made Mandatory CR ERI 17 -->
 <!-- 2018 version is an initial version based on the proposed update of the technical regulation.(lnegte tonnage) -->
+
+<!-- Edition 1.3(.0) : new release 
+		no change request related 
+			update of namespace URI https://ris.cesni.eu/_assets/ERI-ERINOT/1.3 (doesn't contain XSD file name)
+			include the version of the schema (1.3)
+		10th November 2020 Jean-Noel Schilling - CESNI Secretariat 
+-->
 <!-- ============================================================================================== -->
-<xs:schema targetNamespace="http://www.risexpertgroups.org/ERINOT1.3" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.risexpertgroups.org/ERINOT1.3">
+<xs:schema 	xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3" targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.3">
 	<xs:element name="ERINOT">
 		<xs:annotation>
 			<xs:documentation>ERI Notification Message bases the EDIFACT ERINOT 1.3 (EU Regulation 2019/1744)</xs:documentation>
