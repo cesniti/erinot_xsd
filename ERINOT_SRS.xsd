@@ -31,6 +31,7 @@
 <!-- V2.4d      PFO adjustment to AdditionalClassification, the limitation length(7) has been determined in line with the ERINOT 1.2 specification CR ERI 08-->
 <!-- V2.4e      PFO The element 'VoyageNo' has been changed into conditional in accordance with the EDIFACT specification of the ERINOT 1.2 specification CR ERI 11 -->
 <!-- V2.4f      PFO Exclude MessageType enumerations POS and VER from the de facto ERINOT standard (ERINOT 1.2e.xsd)CR ERI 14 -->
+<!-- V2.4G     PFO The length of NSTR code has been changed  from fixed length 6 to minlength 2 and maxlength 6 CR ERI 15 -->
 <!-- ============================================================================================== -->
 <xs:schema targetNamespace="http://www.risexpertgroups.org/ERINOT1.2" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.risexpertgroups.org/ERINOT1.2">
 	<xs:element name="ERINOT">
@@ -425,10 +426,14 @@
 																					</xs:restriction>
 																				</xs:simpleType>
 																			</xs:element>
-																			<xs:element name="NSTRCode" minOccurs="0">
+																			<xs:element name="NSTCode" minOccurs="0">
+																				<xs:annotation>
+																					<xs:documentation>NST code of the non-dangerous cargo</xs:documentation>
+																				</xs:annotation>
 																				<xs:simpleType>
 																					<xs:restriction base="xs:string">
-																						<xs:length value="6"/>
+																						<xs:minLength value="2"/>
+																						<xs:maxLength value="6"/>
 																					</xs:restriction>
 																				</xs:simpleType>
 																			</xs:element>
