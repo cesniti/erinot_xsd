@@ -234,10 +234,28 @@
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
-										<xs:element name="PoweredByLNG" type="xs:boolean" minOccurs="0">
+										<xs:element name="FuelType" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>LNG installation indicator</xs:documentation>
+												<xs:documentation>
+                                                    Fuel type used by vessel
+                                                    'LNG' = Powered by LNG,
+                                                    'HYD' = Powered by Hydrogen,
+													'ELE' = Powered by Electricity,
+                                                    'LOS' = Powered by Low Sulphur fuel,
+													'DIE' = Powered by Diesel,
+                                                    'ZZZ' = Powered by other fuel type
+                                                </xs:documentation>
 											</xs:annotation>
+											<xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="LNG"/>
+                                                    <xs:enumeration value="HYD"/>
+													<xs:enumeration value="ELE"/>
+                                                    <xs:enumeration value="LOS"/>
+													<xs:enumeration value="DIE"/>
+                                                    <xs:enumeration value="ZZZ"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
 										</xs:element>
 									</xs:sequence>
 									<xs:attribute name="StageQualifier" type="xs:string" use="required" fixed="20"/>
