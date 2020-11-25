@@ -957,6 +957,11 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
+			<xs:element name="MMSI" type="xs:integer" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>MMSI number of the vessel</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="LocationType">
