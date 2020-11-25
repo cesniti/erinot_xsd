@@ -393,6 +393,11 @@
 												<xs:documentation>Dimensions of this individual barge</xs:documentation>
 											</xs:annotation>
 										</xs:element>
+										<xs:element name="NominalPower" type="xs:integer" minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation>Total power (in kW) for the forward propulsion</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
