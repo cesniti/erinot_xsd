@@ -557,7 +557,7 @@
 																			</xs:element>
 																			<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>HS code </xs:documentation>
+																					<xs:documentation>No longer in use. Please use HSCode in GoodsDescription or DangerousGoodsInfo.</xs:documentation>
 																				</xs:annotation>
 																			</xs:element>
 																			<xs:element name="CustomsStatus" minOccurs="0">
@@ -614,22 +614,21 @@
 																					</xs:restriction>
 																				</xs:simpleType>
 																			</xs:element>
-																			<xs:element name="NSTCode" minOccurs="0">
+																			<xs:element name="NSTCode" type="NSTCodeType" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>NST code of the non-dangerous cargo</xs:documentation>
+																					<xs:documentation>NST code of the non-dangerous cargo.</xs:documentation>
 																				</xs:annotation>
-																				<xs:simpleType>
-																					<xs:restriction base="xs:string">
-																						<xs:minLength value="2"/>
-																						<xs:maxLength value="6"/>
-																					</xs:restriction>
-																				</xs:simpleType>
 																			</xs:element>
 																			<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
 																				<xs:annotation>
 																					<xs:documentation>HS code of the non-dangerous cargo,</xs:documentation>
 																				</xs:annotation>
 																			</xs:element>
+																			<xs:element name="TypeOfCargo" type="TypeOfCargoType" minOccurs="0">
+                                                                                <xs:annotation>
+                                                                                    <xs:documentation>Simplified classification codes for types of cargo - UNECE Recommendation 21</xs:documentation>
+                                                                                </xs:annotation>
+                                                                            </xs:element>
 																			<xs:element name="GoodsFreeRemark" minOccurs="0">
 																				<xs:annotation>
 																					<xs:documentation>Additional goods description</xs:documentation>
@@ -757,6 +756,21 @@
 																									</xs:element>
 																								</xs:sequence>
 																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="NSTCode" type="NSTCodeType" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>NST code of the non-dangerous and dangerous cargo</xs:documentation>
+																							</xs:annotation>
+																						</xs:element>
+																						<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>HS code of the dangerous cargo</xs:documentation>
+																							</xs:annotation>
+																						</xs:element>
+																						<xs:element name="TypeOfCargo" type="TypeOfCargoType" minOccurs="0">
+																							<xs:annotation>
+																								<xs:documentation>Simplified classification codes for types of cargo - UNECE Recommendation 21</xs:documentation>
+																							</xs:annotation>
 																						</xs:element>
 																					</xs:sequence>
 																				</xs:complexType>
@@ -1214,6 +1228,18 @@
 			<xs:maxLength value="10"/>
 		</xs:restriction>
 	</xs:simpleType>
+	    <xs:simpleType name="TypeOfCargoType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+            <xs:maxLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NSTCodeType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+            <xs:maxLength value="6"/>
+        </xs:restriction>
+    </xs:simpleType>
 	<xs:complexType name="ContainerStowageType">
 		<xs:sequence>
 			<xs:element name="ContainerIdentificationCode">
