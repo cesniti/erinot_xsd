@@ -133,6 +133,16 @@
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
+							<xs:element name="EmergencyPhoneNumber" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Direct phone number for the vessel, to contact the captain/owner in case of an emergency, even if there is no one on board.</xs:documentation>
+                                </xs:annotation>
+								<xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="17"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
