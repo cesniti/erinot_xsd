@@ -233,6 +233,16 @@
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
+										<xs:element name="PreviousVesselName" minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation>Previous name of the ship, if applicable</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:maxLength value="35"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
 										<xs:element name="Nationality">
 											<xs:annotation>
 												<xs:documentation>Nationality of means of transport</xs:documentation>
@@ -244,7 +254,18 @@
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
-										<xs:element name="FuelType" minOccurs="0">
+										<xs:element name="PreviousNationality" minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation>Previous nationality of means of transport (if applicable)</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="2"/>
+                                                    <xs:maxLength value="3"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+										<xs:element name="PoweredByLNG" type="xs:boolean" minOccurs="0">
 											<xs:annotation>
 												<xs:documentation>
                                                     Fuel type used by vessel
