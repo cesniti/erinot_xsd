@@ -265,7 +265,7 @@
                                                 </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>
-										<xs:element name="PoweredByLNG" type="xs:boolean" minOccurs="0">
+										<xs:element name="FuelType" minOccurs="0">
 											<xs:annotation>
 												<xs:documentation>
                                                     Fuel type used by vessel
