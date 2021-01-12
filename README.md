@@ -32,7 +32,10 @@ You can :
 The pull request will be examined during the RIS WEEK by the temporary Working Group CESNI/TI/ERI by illustrating it into a change request.
 Once approved the pull request will be included(merged) into the develop branch by CESNI/TI Secretariat.
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/53be63c61701435591cc07608014d776" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+steps:
+- title: How to clone this ERI repository?
+  description: After watching this video, clone your first repository.
+  video: https://www.loom.com/embed/53be63c61701435591cc07608014d776
 
 If you are not too familiar with this process you can contact the [CESNI/TI Secretariat](mailto:ti_cesni@cesni.eu)
 
