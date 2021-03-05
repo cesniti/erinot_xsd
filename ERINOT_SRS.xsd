@@ -986,8 +986,6 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
 						<xs:length value="3"/>
-						<xs:enumeration value="OFS"/>
-						<xs:enumeration value="ERN"/>
 						<xs:enumeration value="IMO"/>
 						<xs:enumeration value="ENI"/>
 					</xs:restriction>
