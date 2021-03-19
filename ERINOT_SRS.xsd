@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ================================================================================================= -->
-<!-- ERINOT is the XML Voyage & Cargo Notification message based on the IFTDGN98B PROT1.0 edifact msg. -->
-<!-- ================================================================================================= -->
+<!-- ====================================================== -->
+<!-- ERINOT is the XML Voyage & Cargo Notification message. -->
+<!-- ====================================================== -->
 <xs:schema xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4" targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.4">
 	<xs:element name="ERINOT">
 		<xs:annotation>
