@@ -673,12 +673,12 @@
 																					<xs:sequence>
 																						<xs:element name="Regulation">
 																							<xs:annotation>
-																								<xs:documentation>ANR for inland vessels (UNECE ADN Code), 'IMD' for sea going vessels (IMO IMDG code)</xs:documentation>
+																								<xs:documentation>ADN for inland vessels (UNECE ADN Code), 'IMD' for sea going vessels (IMO IMDG code)</xs:documentation>
 																							</xs:annotation>
 																							<xs:simpleType>
 																								<xs:restriction base="xs:string">
 																									<xs:length value="3"/>
-																									<xs:enumeration value="ANR"/>
+																									<xs:enumeration value="ADN"/>
 																									<xs:enumeration value="IMD"/>
 																								</xs:restriction>
 																							</xs:simpleType>
