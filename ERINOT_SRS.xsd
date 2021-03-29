@@ -952,7 +952,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="CommonDenominator" minOccurs="0">
+			<xs:element name="CommonDenominator">
 				<xs:annotation>
 					<xs:documentation>RefNo to group several msgs of same journey</xs:documentation>
 				</xs:annotation>
