@@ -64,3 +64,13 @@ Rules of access of the repository are the following :
 
 ## Edition advises 
 - The XSD file itself should only contains a “light” documentation in the header, the “comments” should be most part of the commit messages
+- The documentation of elements shall follow this example (follow the current indentation of the message on one line):
+
+```
+		<xs:element name="Element_Name" type="xs:Element_type" default="Element_default">
+			<xs:annotation>
+				<xs:documentation>content of documentation</xs:documentation>
+			</xs:annotation>
+		</xs:element>
+```
+Note the use of quote `'` to designate specific values within the text 
