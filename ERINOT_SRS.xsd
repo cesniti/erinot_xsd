@@ -147,6 +147,32 @@
 						</xs:restriction>
 					</xs:simpleType>
 				</xs:element>
+				<xs:element name="CancellationInfo" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CancelReason">
+								<xs:annotation>
+									<xs:documentation>'CAM': mistake in notification, 'CAO': transport does not take place, 'CAV': the main transport destination has changed, 'CHD': the time of arrival has changed</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="CAM"/>
+										<xs:enumeration value="CAO"/>
+										<xs:enumeration value="CAV"/>
+										<xs:enumeration value="CHD"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CancelText" maxOccurs="5">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="70"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="Transport">
 					<xs:annotation>
 						<xs:documentation>DETAILS OF TRANSPORT</xs:documentation>
