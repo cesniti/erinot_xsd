@@ -1229,7 +1229,7 @@
 			</xs:element>
 			<xs:element name="Tonnage">
 				<xs:annotation>
-					<xs:documentation>Maximum capacity of in metric tonnes</xs:documentation>
+					<xs:documentation>Maximum capacity in metric tonnes</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:integer">
