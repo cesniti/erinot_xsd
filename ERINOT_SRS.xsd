@@ -576,7 +576,7 @@ TSP = Transit in the same port</xs:documentation>
 																</xs:element>
 																<xs:element name="NumberOfPackages" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>For containers and tanks the default value is '1'</xs:documentation>
+																		<xs:documentation>Number of inner packages related to type of packages. For containers and tanks the default value is '1'</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:integer">
