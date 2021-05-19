@@ -980,7 +980,7 @@
 			</xs:element>
 			<xs:element name="CommonDenominator">
 				<xs:annotation>
-					<xs:documentation>RefNo to group several msgs of same journey</xs:documentation>
+					<xs:documentation>RefNo to group several msgs of same journey (including other types of ERI messages). Corresponds to common access reference</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
