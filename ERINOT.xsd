@@ -2,7 +2,10 @@
 <!-- ================================================================================================= -->
 <!-- ERINOT is the XML Voyage & Cargo Notification message based on the IFTDGN98B PROT1.0 edifact msg. -->
 <!-- ================================================================================================= -->
-<xs:schema 	xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3" targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.3">
+<xs:schema	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3" targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.3"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	version="1.3">
 	<xs:element name="ERINOT">
 		<xs:annotation>
 			<xs:documentation>ERI Notification Message bases the EDIFACT ERINOT 1.3 (EU Regulation 2019/1744)</xs:documentation>
@@ -34,8 +37,7 @@
 							</xs:element>
 							<xs:element name="MessageVersion" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>'D', Message version number
-</xs:documentation>
+									<xs:documentation>'D', Message version number</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="MessageRelease" type="xs:string">
@@ -373,8 +375,7 @@
 										<xs:element name="EquipmentType">
 											<xs:annotation>
 												<xs:documentation>'BRY' for vessel participating in the propulsion
-'BRN' for vessel not participating in the propulsion
-</xs:documentation>
+'BRN' for vessel not participating in the propulsion</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -635,7 +636,7 @@ TSP = Transit in the same port</xs:documentation>
 																			</xs:element>
 																			<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>HS code of the non-dangerous cargo,</xs:documentation>
+																					<xs:documentation>HS code of the non-dangerous cargo</xs:documentation>
 																				</xs:annotation>
 																			</xs:element>
 																			<xs:element name="GoodsFreeRemark" minOccurs="0">
@@ -1249,8 +1250,7 @@ Proper shipping name, supplemented as necessary with the correct technical name,
 		<xs:sequence>
 			<xs:element name="ContainerIdentificationCode">
 				<xs:annotation>
-					<xs:documentation>For containers the Container identification code shall be used(owner code, identifier, serial number. check digit). For liquid bulk, use code 'NA'
-</xs:documentation>
+					<xs:documentation>For containers the Container identification code shall be used(owner code, identifier, serial number. check digit). For liquid bulk, use code 'NA'</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
