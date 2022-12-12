@@ -670,7 +670,7 @@
 																			</xs:element>
 																			<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>HS code of the non-dangerous cargo,</xs:documentation>
+																					<xs:documentation>HS code of the non-dangerous cargo</xs:documentation>
 																				</xs:annotation>
 																			</xs:element>
 																			<xs:element name="TypeOfCargo" type="TypeOfCargoType" minOccurs="0">
