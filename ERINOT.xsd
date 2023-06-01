@@ -260,7 +260,7 @@
 										<xs:element name="FuelType" minOccurs="0">
 											<xs:annotation>
 												<xs:documentation>
-                                                    Fuel type used by vessel
+                                                    Fuel type used by vessel for propulsion
                                                     'LNG' = Powered by LNG,
                                                     'HYD' = Powered by Hydrogen,
 													'ELE' = Powered by Electricity,
