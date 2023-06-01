@@ -262,11 +262,8 @@
 												<xs:documentation>
                                                     Fuel type used by vessel
                                                     'LNG' = Powered by LNG,
-													'CNG' = Powered by CNG,
-													'MET' = Powered by Methanol,
-                                                    'LHY' = Powered by Liquid Hydrogen,
-													'CHY' = Powered by Compressed Hydrogen,
-													'ELE' = Powered by Electricity (Battery),
+                                                    'HYD' = Powered by Hydrogen,
+													'ELE' = Powered by Electricity,
                                                     'LOS' = Powered by Low Sulphur fuel,
 													'DIE' = Powered by Diesel,
                                                     'ZZZ' = Powered by other fuel type
@@ -275,10 +272,7 @@
 											<xs:simpleType>
                                                 <xs:restriction base="xs:string">
                                                     <xs:enumeration value="LNG"/>
-													<xs:enumeration value="CNG"/>
-													<xs:enumeration value="MET"/>
-                                                    <xs:enumeration value="CHY"/>
-													<xs:enumeration value="LHY"/>
+                                                    <xs:enumeration value="HYD"/>
 													<xs:enumeration value="ELE"/>
                                                     <xs:enumeration value="LOS"/>
 													<xs:enumeration value="DIE"/>
