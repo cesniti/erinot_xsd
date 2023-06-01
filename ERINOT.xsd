@@ -439,6 +439,29 @@
                                                 <xs:documentation>Total power (in kW) for the forward propulsion</xs:documentation>
                                             </xs:annotation>
                                         </xs:element>
+										<xs:element name="AlternativeFuelInstallation" minOccurs="0" maxOccurs="6">
+                                            <xs:annotation>
+                                                <xs:documentation>Indicator if there is a presence onboard of one or several of the following systems, used for propulsion:
+													'LNG': Liquified Natural Gas,
+													'CNG': Compressed Natural Gas,
+													'MET': Methanol,
+													'CHY': Compressed Hydrogen,
+													'LHY': Liquified Hydrogen,
+													'BAT': Battery pack with a total capacity exceeding 500 kWh
+												</xs:documentation>
+                                            </xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="3"/>
+													<xs:enumeration value="LNG"/>
+													<xs:enumeration value="CNG"/>
+													<xs:enumeration value="MET"/>
+													<xs:enumeration value="CHY"/>
+													<xs:enumeration value="LHY"/>
+													<xs:enumeration value="BAT"/>
+												</xs:restriction>
+											</xs:simpleType>
+                                        </xs:element>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -1320,9 +1343,9 @@
 					<xs:documentation>For containers 'BBBRRTT' for bay/row/tier (In accordance with ISO 9711-1 (1990)).
 For tanks:
 LLnn where
-—
+-
 LL describes the location of the tank (PS for port side, SB for starboard, CC for Center side, CP for Center portside, CS for Center starboard (in case of 4-width configuration))
-—
+-
 nn describes the sequence number of the tank, starting with 01 from front to nn to the back.</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
