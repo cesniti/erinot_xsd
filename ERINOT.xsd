@@ -100,15 +100,15 @@
 								</xs:simpleType>
 							</xs:element>
 							<xs:element name="EmergencyPhoneNumber" minOccurs="0">
-                                <xs:annotation>
-                                    <xs:documentation>Direct phone number for the vessel, to contact the captain/owner in case of an emergency, even if there is no one on board.</xs:documentation>
-                                </xs:annotation>
+								<xs:annotation>
+									<xs:documentation>Direct phone number for the vessel, to contact the captain/owner in case of an emergency, even if there is no one on board.</xs:documentation>
+								</xs:annotation>
 								<xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:maxLength value="17"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="17"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
@@ -226,15 +226,15 @@
 											</xs:simpleType>
 										</xs:element>
 										<xs:element name="PreviousVesselName" minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Previous name of the ship, if applicable</xs:documentation>
-                                            </xs:annotation>
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:string">
-                                                    <xs:maxLength value="35"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:element>
+											<xs:annotation>
+												<xs:documentation>Previous name of the ship, if applicable</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="35"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
 										<xs:element name="Nationality">
 											<xs:annotation>
 												<xs:documentation>Nationality of means of transport</xs:documentation>
@@ -247,38 +247,38 @@
 											</xs:simpleType>
 										</xs:element>
 										<xs:element name="PreviousNationality" minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Previous nationality of means of transport (if applicable)</xs:documentation>
-                                            </xs:annotation>
-                                            <xs:simpleType>
-                                                <xs:restriction base="xs:string">
-                                                    <xs:minLength value="2"/>
-                                                    <xs:maxLength value="3"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
-                                        </xs:element>
+											<xs:annotation>
+												<xs:documentation>Previous nationality of means of transport (if applicable)</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:minLength value="2"/>
+													<xs:maxLength value="3"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
 										<xs:element name="FuelType" minOccurs="0">
 											<xs:annotation>
 												<xs:documentation>
-                                                    Fuel type used by vessel for propulsion
-                                                    'LNG' = Powered by LNG,
-                                                    'HYD' = Powered by Hydrogen,
+													Fuel type used by vessel for propulsion
+													'LNG' = Powered by LNG,
+													'HYD' = Powered by Hydrogen,
 													'ELE' = Powered by Electricity,
-                                                    'LOS' = Powered by Low Sulphur fuel,
+													'LOS' = Powered by Low Sulphur fuel,
 													'DIE' = Powered by Diesel,
-                                                    'ZZZ' = Powered by other fuel type
-                                                </xs:documentation>
+													'ZZZ' = Powered by other fuel type
+												</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
-                                                <xs:restriction base="xs:string">
-                                                    <xs:enumeration value="LNG"/>
-                                                    <xs:enumeration value="HYD"/>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="LNG"/>
+													<xs:enumeration value="HYD"/>
 													<xs:enumeration value="ELE"/>
-                                                    <xs:enumeration value="LOS"/>
+													<xs:enumeration value="LOS"/>
 													<xs:enumeration value="DIE"/>
-                                                    <xs:enumeration value="ZZZ"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
+													<xs:enumeration value="ZZZ"/>
+												</xs:restriction>
+											</xs:simpleType>
 										</xs:element>
 									</xs:sequence>
 									<xs:attribute name="StageQualifier" type="xs:string" use="required" fixed="20"/>
@@ -435,10 +435,10 @@
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="NominalPower" type="xs:integer" minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Total power (in kW) for the forward propulsion</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
+											<xs:annotation>
+												<xs:documentation>Total power (in kW) for the forward propulsion</xs:documentation>
+											</xs:annotation>
+										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -460,8 +460,9 @@
 										<xs:element name="ContRange">
 											<xs:annotation>
 												<xs:documentation>'RNG20' for containers having a length between 20 and 29 feet
-'RNG30' for containers having a length between 30 and 39 feet
-'RNG40' for containers having a length of 40 feet or more</xs:documentation>
+													'RNG30' for containers having a length between 30 and 39 feet
+													'RNG40' for containers having a length of 40 feet or more
+												</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -674,10 +675,10 @@
 																				</xs:annotation>
 																			</xs:element>
 																			<xs:element name="TypeOfCargo" type="TypeOfCargoType" minOccurs="0">
-                                                                                <xs:annotation>
-                                                                                    <xs:documentation>Simplified classification codes for types of cargo - UNECE Recommendation 21</xs:documentation>
-                                                                                </xs:annotation>
-                                                                            </xs:element>
+																				<xs:annotation>
+																					<xs:documentation>Simplified classification codes for types of cargo - UNECE Recommendation 21</xs:documentation>
+																				</xs:annotation>
+																			</xs:element>
 																			<xs:element name="GoodsFreeRemark" minOccurs="0">
 																				<xs:annotation>
 																					<xs:documentation>Additional goods description</xs:documentation>
@@ -1280,18 +1281,18 @@
 			<xs:maxLength value="10"/>
 		</xs:restriction>
 	</xs:simpleType>
-	    <xs:simpleType name="TypeOfCargoType">
-        <xs:restriction base="xs:string">
-            <xs:minLength value="2"/>
-            <xs:maxLength value="2"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:simpleType name="NSTCodeType">
-        <xs:restriction base="xs:string">
-            <xs:minLength value="2"/>
-            <xs:maxLength value="6"/>
-        </xs:restriction>
-    </xs:simpleType>
+		<xs:simpleType name="TypeOfCargoType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"/>
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NSTCodeType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2"/>
+			<xs:maxLength value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="ContainerStowageType">
 		<xs:sequence>
 			<xs:element name="ContainerIdentificationCode">
@@ -1318,12 +1319,13 @@
 			<xs:element name="StowageLocation" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>For containers 'BBBRRTT' for bay/row/tier (In accordance with ISO 9711-1 (1990)).
-For tanks:
-LLnn where
-—
-LL describes the location of the tank (PS for port side, SB for starboard, CC for Center side, CP for Center portside, CS for Center starboard (in case of 4-width configuration))
-—
-nn describes the sequence number of the tank, starting with 01 from front to nn to the back.</xs:documentation>
+						For tanks:
+						LLnn where
+						—
+						LL describes the location of the tank (PS for port side, SB for starboard, CC for Center side, CP for Center portside, CS for Center starboard (in case of 4-width configuration))
+						—
+						nn describes the sequence number of the tank, starting with 01 from front to nn to the back.
+					</xs:documentation>
 				</xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -1353,10 +1355,10 @@ nn describes the sequence number of the tank, starting with 01 from front to nn 
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="InertGas" type="xs:boolean" minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>An inert gas is transported</xs:documentation>
-                </xs:annotation>
-            </xs:element>
+				<xs:annotation>
+					<xs:documentation>An inert gas is transported</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name="WeightType">
