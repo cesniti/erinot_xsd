@@ -423,7 +423,7 @@
 										</xs:element>
 										<xs:element name="AlternativeFuelInstallation" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Indicator if there is a presence onboard of one or several of the following systems, used for propulsion:
+												<xs:documentation>Indicator if there is a presence onboard of systems, which are intended to be used for propulsion, with one of the following energy sources:
 													'LNG': Liquified Natural Gas,
 													'CNG': Compressed Natural Gas,
 													'MET': Methanol,
