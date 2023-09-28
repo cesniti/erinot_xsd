@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ====================================================== -->
-<!-- ERINOT is the XML Voyage & Cargo Notification message. -->
-<!-- ====================================================== -->
-<xs:schema xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4" targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.4">
+<!-- ==================================================== -->
+<!-- ERI Notification Message (ERINOT) as part of ES-RIS. -->
+<!-- ==================================================== -->
+<xs:schema xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4"
+		targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4"
+		elementFormDefault="qualified"
+		attributeFormDefault="unqualified"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		version="1.4">
 	<xs:element name="ERINOT">
 		<xs:annotation>
-			<xs:documentation>ERI Notification Message bases the EDIFACT ERINOT 1.4 (Draft v01)</xs:documentation>
+			<xs:documentation>ERI Notification Message (ERINOT) version 1.4 as part of ES-RIS 2025/1</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
