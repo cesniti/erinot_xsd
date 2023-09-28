@@ -257,29 +257,6 @@
                                                 </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>
-										<xs:element name="FuelType" minOccurs="0">
-											<xs:annotation>
-												<xs:documentation>
-                                                    Fuel type used by vessel
-                                                    'LNG' = Powered by LNG,
-                                                    'HYD' = Powered by Hydrogen,
-													'ELE' = Powered by Electricity,
-                                                    'LOS' = Powered by Low Sulphur fuel,
-													'DIE' = Powered by Diesel,
-                                                    'ZZZ' = Powered by other fuel type
-                                                </xs:documentation>
-											</xs:annotation>
-											<xs:simpleType>
-                                                <xs:restriction base="xs:string">
-                                                    <xs:enumeration value="LNG"/>
-                                                    <xs:enumeration value="HYD"/>
-													<xs:enumeration value="ELE"/>
-                                                    <xs:enumeration value="LOS"/>
-													<xs:enumeration value="DIE"/>
-                                                    <xs:enumeration value="ZZZ"/>
-                                                </xs:restriction>
-                                            </xs:simpleType>
-										</xs:element>
 									</xs:sequence>
 									<xs:attribute name="StageQualifier" type="xs:string" use="required" fixed="20"/>
 								</xs:complexType>
@@ -435,33 +412,30 @@
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="NominalPower" type="xs:integer" minOccurs="0">
-                                            <xs:annotation>
-                                                <xs:documentation>Total power (in kW) for the forward propulsion</xs:documentation>
-                                            </xs:annotation>
-                                        </xs:element>
-										<xs:element name="AlternativeFuelInstallation" minOccurs="0" maxOccurs="6">
-                                            <xs:annotation>
-                                                <xs:documentation>Indicator if there is a presence onboard of one or several of the following systems, used for propulsion:
+											<xs:annotation>
+												<xs:documentation>Total power (in kW) for the forward propulsion</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="AlternativeFuelInstallation" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Indicator if there is a presence onboard of one or several of the following systems, used for propulsion:
 													'LNG': Liquified Natural Gas,
 													'CNG': Compressed Natural Gas,
 													'MET': Methanol,
 													'CHY': Compressed Hydrogen,
 													'LHY': Liquified Hydrogen,
-													'BAT': Battery pack with a total capacity exceeding 500 kWh
+													'BAT': Accumulators with a total capacity of 500 kWh or more
 												</xs:documentation>
-                                            </xs:annotation>
-											<xs:simpleType>
-												<xs:restriction base="xs:string">
-													<xs:maxLength value="3"/>
-													<xs:enumeration value="LNG"/>
-													<xs:enumeration value="CNG"/>
-													<xs:enumeration value="MET"/>
-													<xs:enumeration value="CHY"/>
-													<xs:enumeration value="LHY"/>
-													<xs:enumeration value="BAT"/>
-												</xs:restriction>
-											</xs:simpleType>
-                                        </xs:element>
+											</xs:annotation>
+											<xs:sequence>
+												<xs:element name="LNG" type="xs:boolean" default="0" />
+												<xs:element name="CNG" type="xs:boolean" default="0" />
+												<xs:element name="MET" type="xs:boolean" default="0" />
+												<xs:element name="CHY" type="xs:boolean" default="0" />
+												<xs:element name="LHY" type="xs:boolean" default="0" />
+												<xs:element name="BAT" type="xs:boolean" default="0" />
+											</xs:sequence>
+										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
