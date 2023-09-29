@@ -429,7 +429,7 @@
 													'MET': Methanol,
 													'CHY': Compressed Hydrogen,
 													'LHY': Liquified Hydrogen,
-													'BAT': Accumulators with a total capacity of 500 kWh or more
+													'BAT': Accumulators with a total capacity exceeding 500 kWh
 												</xs:documentation>
 											</xs:annotation>
 											<xs:sequence>
