@@ -2,11 +2,11 @@
 <!-- ==================================================== -->
 <!-- ERI Notification Message (ERINOT) as part of ES-RIS. -->
 <!-- ==================================================== -->
-<xs:schema xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4"
+<xs:schema 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4"
 		targetNamespace="https://ris.cesni.eu/_assets/ERI-ERINOT/1.4"
 		elementFormDefault="qualified"
 		attributeFormDefault="unqualified"
-		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		version="1.4">
 	<xs:element name="ERINOT">
 		<xs:annotation>
@@ -54,7 +54,7 @@
 							</xs:element>
 							<xs:element name="AssociationAssignedCode" type="xs:string">
 								<xs:annotation>
-									<xs:documentation>'ERI14', ERI Version 1.4 Draft v01</xs:documentation>
+									<xs:documentation>'ERI14', ERI Version 1.4</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 						</xs:sequence>
