@@ -242,7 +242,7 @@
 										</xs:element>
 										<xs:element name="Nationality">
 											<xs:annotation>
-												<xs:documentation>Nationality of means of transport</xs:documentation>
+												<xs:documentation>Nationality of means of transport. If the nationality of the means of transport is not known, the 3-digit code of the country of the inspection body that issued the last vessel certificate shall be used.</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -253,7 +253,7 @@
 										</xs:element>
 										<xs:element name="PreviousNationality" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Previous nationality of means of transport (if applicable)</xs:documentation>
+												<xs:documentation>Previous nationality of means of transport (if applicable). If the previous nationality of the means of transport is not known, the 3-digit code of the country of the most recent inspection body that issued a certificate for this vessel, considering only the inspection bodies of a different country (than current "Nationality").</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
