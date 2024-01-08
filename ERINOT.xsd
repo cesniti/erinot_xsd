@@ -432,14 +432,16 @@
 													'BAT': Accumulators with a total capacity exceeding 500 kWh
 												</xs:documentation>
 											</xs:annotation>
-											<xs:sequence>
-												<xs:element name="LNG" type="xs:boolean" default="0" />
-												<xs:element name="CNG" type="xs:boolean" default="0" />
-												<xs:element name="MET" type="xs:boolean" default="0" />
-												<xs:element name="CHY" type="xs:boolean" default="0" />
-												<xs:element name="LHY" type="xs:boolean" default="0" />
-												<xs:element name="BAT" type="xs:boolean" default="0" />
-											</xs:sequence>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="LNG" type="xs:boolean" default="0" />
+													<xs:element name="CNG" type="xs:boolean" default="0" />
+													<xs:element name="MET" type="xs:boolean" default="0" />
+													<xs:element name="CHY" type="xs:boolean" default="0" />
+													<xs:element name="LHY" type="xs:boolean" default="0" />
+													<xs:element name="BAT" type="xs:boolean" default="0" />
+												</xs:sequence>
+											</xs:complexType>
 										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
