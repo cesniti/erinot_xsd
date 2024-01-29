@@ -416,9 +416,9 @@
 												<xs:documentation>Dimensions of this individual barge</xs:documentation>
 											</xs:annotation>
 										</xs:element>
-										<xs:element name="NominalPower" type="xs:integer" minOccurs="0">
+										<xs:element name="TotalPower" type="xs:integer" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Total power (in kW) for the forward propulsion</xs:documentation>
+												<xs:documentation>Total power (in kW) of the propulsion system (corresponding to field #28 of the model of inland navigation vessel certificate as described in ES-TRIN, Annex 3, Section I)</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="AlternativeFuelInstallation" minOccurs="0">
