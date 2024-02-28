@@ -423,12 +423,12 @@
 										</xs:element>
 										<xs:element name="AlternativeFuelInstallation" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Indicator if there is a presence onboard of systems, which are intended to be used for propulsion, with one of the following energy sources:
+												<xs:documentation>Indicator if there is a presence onboard of propulsion or auxiliary systems, which are intended to be used, with one of the following energy sources:
 													'LNG': Liquified Natural Gas,
 													'CNG': Compressed Natural Gas,
 													'MET': Methanol,
-													'CHY': Compressed Hydrogen,
-													'LHY': Liquified Hydrogen,
+													'CH2': Compressed Hydrogen,
+													'LH2': Liquified Hydrogen,
 													'BAT': Accumulators with a total capacity exceeding 500 kWh
 												</xs:documentation>
 											</xs:annotation>
@@ -437,8 +437,8 @@
 													<xs:element name="LNG" type="xs:boolean" default="0" />
 													<xs:element name="CNG" type="xs:boolean" default="0" />
 													<xs:element name="MET" type="xs:boolean" default="0" />
-													<xs:element name="CHY" type="xs:boolean" default="0" />
-													<xs:element name="LHY" type="xs:boolean" default="0" />
+													<xs:element name="CH2" type="xs:boolean" default="0" />
+													<xs:element name="LH2" type="xs:boolean" default="0" />
 													<xs:element name="BAT" type="xs:boolean" default="0" />
 												</xs:sequence>
 											</xs:complexType>
