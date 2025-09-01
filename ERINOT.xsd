@@ -60,6 +60,64 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
+				<xs:element name="GeneratingSoftware" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>To identify the originating software that generated this message</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SoftwareName" minOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Name of the software application</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="35"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="SoftwareVersion" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Version of the software application</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="17"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PreGeneratingSoftware" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>To identify the originating software that pre-generated data before passing it to the generating software that eventually generated this message</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SoftwareName" minOccurs="1">
+								<xs:annotation>
+									<xs:documentation>Name of the software application</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="17"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="SoftwareVersion" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Version of the software application</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="17"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="SafetyExplanation" minOccurs="0">
 					<xs:annotation>
 						<xs:documentation>To notify the number of persons on board and the number of blue cones for safety reasons</xs:documentation>
