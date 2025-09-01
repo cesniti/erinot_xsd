@@ -199,7 +199,7 @@
 										</xs:element>
 										<xs:element name="TransportMode">
 											<xs:annotation>
-												<xs:documentation>'8' for Inland water transport, '1' for maritime transport </xs:documentation>
+												<xs:documentation>'8' for Inland water transport, '1' for maritime transport</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -327,7 +327,7 @@
 										</xs:element>
 										<xs:element name="ETD" type="xs:dateTime" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Estimated Time of Departure </xs:documentation>
+												<xs:documentation>Estimated Time of Departure</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="PassageTime" type="xs:dateTime" minOccurs="0"/>
@@ -434,12 +434,12 @@
 											</xs:annotation>
 											<xs:complexType>
 												<xs:sequence>
-													<xs:element name="LNG" type="xs:boolean" default="0" />
-													<xs:element name="CNG" type="xs:boolean" default="0" />
-													<xs:element name="MET" type="xs:boolean" default="0" />
-													<xs:element name="CH2" type="xs:boolean" default="0" />
-													<xs:element name="LH2" type="xs:boolean" default="0" />
-													<xs:element name="BAT" type="xs:boolean" default="0" />
+													<xs:element name="LNG" type="xs:boolean" default="0"/>
+													<xs:element name="CNG" type="xs:boolean" default="0"/>
+													<xs:element name="MET" type="xs:boolean" default="0"/>
+													<xs:element name="CH2" type="xs:boolean" default="0"/>
+													<xs:element name="LH2" type="xs:boolean" default="0"/>
+													<xs:element name="BAT" type="xs:boolean" default="0"/>
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
@@ -670,7 +670,7 @@
 																			</xs:element>
 																			<xs:element name="NSTCode" type="NSTCodeType" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>NST code of the non-dangerous cargo.</xs:documentation>
+																					<xs:documentation>NST code of the non-dangerous cargo</xs:documentation>
 																				</xs:annotation>
 																			</xs:element>
 																			<xs:element name="HSCode" type="HSCodeType" minOccurs="0">
@@ -1295,7 +1295,7 @@
 			<xs:maxLength value="10"/>
 		</xs:restriction>
 	</xs:simpleType>
-		<xs:simpleType name="TypeOfCargoType">
+	<xs:simpleType name="TypeOfCargoType">
 		<xs:restriction base="xs:string">
 			<xs:minLength value="2"/>
 			<xs:maxLength value="2"/>
@@ -1398,7 +1398,7 @@
 			</xs:element>
 			<xs:element name="CommsContact" type="CommsContactType" minOccurs="0" maxOccurs="4">
 				<xs:annotation>
-					<xs:documentation>Communication contact details </xs:documentation>
+					<xs:documentation>Communication contact details</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
