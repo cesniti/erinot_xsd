@@ -888,51 +888,16 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
-										<xs:element name="eFTIConsignmentMovementUIL" minOccurs="0">
+										<xs:element name="ExperimentField" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>To uniquely identify an 'eFTI Consignment Movement Data Set' with a Unique Identification Link</xs:documentation>
+												<xs:documentation> This field is reserved for experimental use. The structure, semantics and permitted values of the content of this field are defined by the authority responsible for the experiment. The value of the field shall begin with an experiment identifier that uniquely identifies the experiment to which the data relates.This field shall be ignored by authorities not participating in the experiment.</xs:documentation>
 											</xs:annotation>
-											<xs:complexType>
-												<xs:sequence>
-													<xs:element name="eFTIPlatformID" minOccurs="1">
-														<xs:annotation>
-															<xs:documentation>The ID of the certified eFTI Platform where the 'eFTI Consignment Movement Data Set' resides</xs:documentation>
-														</xs:annotation>
-														<xs:simpleType>
-															<xs:restriction base="xs:string">
-																<xs:maxLength value="128"/>
-															</xs:restriction>
-														</xs:simpleType>
-													</xs:element>
-													<xs:element name="eFTIGateID" minOccurs="1">
-														<xs:annotation>
-															<xs:documentation>The ID of the eFTI Gate of the MS where the eFTI Platform has been certified</xs:documentation>
-														</xs:annotation>
-														<xs:simpleType>
-															<xs:restriction base="xs:string">
-																<xs:maxLength value="128"/>
-															</xs:restriction>
-														</xs:simpleType>
-													</xs:element>
-													<xs:element name="eFTIConsignmentID" minOccurs="1">
-														<xs:annotation>
-															<xs:documentation>The ID of the eFTI Consignment Movement Data Set</xs:documentation>
-														</xs:annotation>
-														<xs:simpleType>
-															<xs:restriction base="xs:string">
-																<xs:maxLength value="128"/>
-															</xs:restriction>
-														</xs:simpleType>
-													</xs:element>
-												</xs:sequence>
-											</xs:complexType>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="512"/>
+												</xs:restriction>
+											</xs:simpleType>
 										</xs:element>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
 			</xs:sequence>
 			<xs:attribute name="VersionMajor" type="xs:integer" use="required"/>
 			<xs:attribute name="VersionMinor" type="xs:integer" use="required"/>
